@@ -1,0 +1,20 @@
+<h1>MATCHED MOST QUALIFIED JOB CANDIDATES</h1>
+<hr>
+
+<!-- <button (click)="readData()">Click here to fetch data from Flask</button>
+<hr> -->
+
+<table id="data">
+        <tr>
+            <th *ngFor="let column of headers">
+                {{column}}
+            </th>
+        </tr>
+
+        <tr *ngFor="let row of data">
+            <td *ngFor="let col of headers">
+                {{row[col]}}
+            </td>
+        </tr>
+
+</table>

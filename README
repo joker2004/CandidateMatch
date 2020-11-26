@@ -1,0 +1,22 @@
+This webpage is powered by Angular and Python
+Python serves as the backend by retrieving JSON data through the JobAdder API provided
+Two kinds of data are retrieved : candidate data and job data which contains open positions and qualifications needed
+The python program then matches the candidates and the job by matching the Job Skills and the Candidate Skill Tags
+The best candidate who match the job description is then filtered, those candidates that match the most skills for a job are considered the most qualified
+
+>>How to run the program
+
+-Open Terminal
+-Under angularpython folder cd src folder
+-Run Command ng serve
+-Check to see that it says compiled successfully
+
+-Open a second terminal while keeping the first one open
+-Under src folder cd the Flask folder
+-Run the file rest_server.py  in the flask folder using command python rest.py
+-Proceed to browser and open http://localhost:4200/
+-shortlisted list of job candidates will be displayed
+
+
+Improvements to be considered.
+Add weighted job skills to Job API data which will help to match candidates with the most preferred skills rather than maximum skillsets that match.
